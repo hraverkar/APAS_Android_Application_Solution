@@ -29,6 +29,9 @@ namespace ConsoleApp161
         {
           if (arr[i] + arr[j] == k)
           {
+            int t = Array.IndexOf(arr, arr[i]);
+            int p = Array.IndexOf(arr, arr[j]);
+            Console.WriteLine(t+" :: "+p);
             return "True";
           }
         }
