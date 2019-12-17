@@ -11,17 +11,19 @@ namespace ConsoleApp7
       Thread thread = new Thread(tdstard);
       thread.Start();
       for (int i = 0; i <= 8; i++)
+      {
         Console.WriteLine("My main therad " + i);
-      Thread.Sleep(10000);
+        Thread.Sleep(1000);
+      }
     }
 
     private static void threadJob()
     {
       for (int i = 0; i <= 6; i++)
+      {
         Console.WriteLine("This is Thead : : " + i);
-
-      Thread.Sleep(500);
-      
+        Thread.Sleep(500);
+      }
     }
   }
 }
